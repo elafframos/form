@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="cadastroForm">
+        <h1>Cadastro</h1> <br>
+
+        <label for="nome">NOME*</label> <br>
+        <input type="text" class="nome" name="nome" required><br><br>
+
+        <label for="email">E-MAIL*</label> <br>
+        <input type="email" class="email" name="email" required><br><br>
+
+        <label for="cpf">CPF*</label> <br>
+        <input type="text" class="cpf" name="cpf" maxlength="11" required><br><br>
+
+        <label for="senha">SENHA*</label> <br>
+        <input type="password" class="senha" name="senha" required><br><br>
+
+        <button type="submit">Cadastrar</button>
+        
+    </form>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar"></span>
+            <p id="mensagemModal">Cadastrado com sucesso!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
